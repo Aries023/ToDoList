@@ -17,7 +17,7 @@ public class User {
     @NonNull
     private String email;
     @Nullable
-    private int age;
+    private Integer age;
     @NonNull
     private String password;
 

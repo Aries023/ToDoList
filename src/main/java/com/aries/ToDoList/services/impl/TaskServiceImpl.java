@@ -84,7 +84,7 @@ public class TaskServiceImpl implements TaskService {
 
     @Override
     public void update(Integer id, Task task) {
-        final String sql = "update task set name = ?, status = ?, category = ?, description = ? where id ?";
+        final String sql = "update task set name = ?, status = ?, category = ?, description = ? where id = ?";
         jdbcTemplate.update(sql, task.getName(), task.getStatus(), task.getCategory(), task.getDescription(), id);
 
     }

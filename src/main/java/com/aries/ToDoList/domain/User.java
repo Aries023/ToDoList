@@ -24,7 +24,7 @@ public class User {
     public User() {
     }
 
-    public User(@Nullable Integer id, @NonNull String name, @NonNull String surname, @NonNull String nickname, @NonNull String email, int age, @NonNull String password) {
+    public User(@Nullable Integer id, @NonNull String name, @NonNull String surname, @NonNull String nickname, @NonNull String email, Integer age, @NonNull String password) {
         this.id = id;
         this.name = name;
         this.surname = surname;
@@ -79,7 +79,7 @@ public class User {
         this.email = email;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 
